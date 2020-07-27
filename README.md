@@ -1,6 +1,6 @@
 # Translate Util
 
-##How does it work ? 
+## How does it work ? 
 
 first you have to build the typescript project \n
 then, you will launch or integrate the project in your typescript project
