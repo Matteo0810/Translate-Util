@@ -18,7 +18,7 @@ function getLang(langName: String = undefined) {
 function langExist(langName: String) {
     try {
         const file = fs.readFileSync(`./langs/${langName}.json`, { encoding: "utf8" });
-        return file == null;
+        return file !== null;
     } catch(error) {
         console.error(error);
     }
