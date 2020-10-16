@@ -38,7 +38,7 @@ function delLang(langName: String) {
  * @param langName name of the file
  */
 function createLangConfig(langName: String) {
-    if(!langName) return console.error('Please, enter langName to create the file config.')
+    if(!langName) return console.error('Please, enter langName to create the config file.')
     fs.appendFile(`./langs/${langName}.json`, '{}', err => {
         if(err) return console.error(err)
     });
