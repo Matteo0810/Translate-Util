@@ -6,8 +6,7 @@ import * as fs from 'fs';
  * @return {Language} Language return the Language class
  */
 function getLang(langName: String = undefined) {
-    let lang = langName;
-    if(!lang) lang = "en";
+    const lang = !lang ? "en" : langName;
     return new Language(lang);
 }
 
